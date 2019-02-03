@@ -1,0 +1,42 @@
+unit-time {
+  $halfHeight: 0.72em;
+  $borderRadius: 5%;
+  height: inherit;  
+  align-items: center;
+
+
+  .container {
+    margin: 5px;
+    padding: 10px;
+    border-radius: $borderRadius;
+    border: 2px solid #767676;
+    min-width: 20vw;
+    text-align: center;
+  }
+  
+  .number {
+    font-size: 5vw;
+    display: block;
+    padding: 0.25em 0.25em;
+    border-radius: $borderRadius $borderRadius 0 0;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+  }
+  
+  .label {
+    font-size: 2vw;
+    text-align: center;
+    display: block;
+  }
+  .text-effect-1{
+    color: #FFFFFF;
+    //background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;  
+  }
+  .text-effect-2{
+    color: rgba(96, 96, 96, 0.54);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+  }
+
+}

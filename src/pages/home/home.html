@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Countdown Timer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col>
+      <button ion-button full (click)="start()">Start</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button full (click)="stop()">Stop</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button full (click)="reset()">Reset</button>
+    </ion-col>
+  </ion-row>
+
+
+
+  <div class="display">
+    <unit-time label="days" value="{{days}}"></unit-time>
+    <unit-time label="hours" value="{{hours}}"></unit-time>
+    <unit-time label="minutes" value="{{minutes}}"></unit-time>
+    <unit-time label="seconds" value="{{seconds}}"></unit-time>
+  </div>
+
+</ion-content>
